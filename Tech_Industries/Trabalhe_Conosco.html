@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tech Industries</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="shadow bar">
+            <nav class="container">
+                <img title="Tech Industries" class="logo shadow" src="Logo.jpg" alt="logo">
+                <a class="itens" target="_self" href="index.html"><b>Home</b></a>
+                <a class="itens" target="_self" href="Institucional.html"><b>Institucional</b></a>
+                <a class="itens" target="_self" href="Tecnologias.html"><b>Tecnologias</b></a>
+                <a class="itens" target="_self" href="Proprietarios.html"><b>Proprietários</b></a>
+                <a class="itens" target="_self" href="Trabalhe_Conosco.html"><b>Trabalhe Conosco</b></a>
+            </nav>
+        </div>
+        <div class="titlebar">
+            <p class="title">TRABALHE CONOSCO</p>
+        </div><br><br>
+        <p class="anuncio lead text-primary shadow"><br>A Tech Industries ja conta com mais de 20 mil funcionários espalhados por todo o Brasil, efetue o cadastro e preencha o dados solicitados e venha fazer parte da nossa familia para juntos construirmos um mundo melhor para as novas gerações.</p><br><br>
+        <h1><ins>Cadastrar Usuário</ins></h1><br>
+        <form class="user" name="formuser" action="#" method="POST"><br>
+            CPF:  <input style="margin: 10px 15px 0 0;" type="number" size="8" name="CPF">
+            <span style="position: relative;left:50px;">E-mail:  <input type="text" name="email" ></span><br><br>
+            Senha:  <input type="password" name="senha" >
+            <span style="position: relative;left:35px">Confirmar:  <input type="password" name="rep_senha"></span><br><br>			
+            <input class="btn-dark" style="margin-left: 5px;" type="submit" onclick="return validar()">
+        </form><br><br>
+        <h1><ins>Dados de Contato</ins></h1><br>
+        <form class="dados">
+            <table><tr><br>
+                <td style="position: relative;left:40px;"><p>Nome</p>
+                <input type="text" name="Nome" size=45></td>
+                <td style="position: relative;left:60px;"><p>Sobrenome</p>
+                <input type="text" name="Sobrenome" size=45></td>
+            </tr></table><br>
+            <table><tr style="position: relative;left:40px;">
+                <td ><p>Nascimento</p>
+                <input type="date" name="Nascimento"></td>
+                <td style="position: relative;left:20px;"><p>RG</p>
+                <input type="number" name="RG" size=20></td>
+                <td style="position: relative;left:40px;"><p>Sexo</p>
+                <select>
+                    <option size=20></option>
+                    <option size=20>Feminino</option>
+                    <option size=20>Masculino</option>
+                </select>
+            </tr></table><br>
+            <table><tr>
+                <td style="position: relative;left:40px;"><p>CEP</p>
+                <input type="number" name="CEP" size=10></td>
+                <td style="position: relative;left:60px;"><p>Endereço</p>
+                <input type="text" name="Endereço" size=25></td>
+                <td style="position: relative;left:80px;"><p>Número</p>
+                <input type="number" name="N" size=8></td>
+            </tr></table><br>
+            <table><tr>
+                <td style="position: relative;left:40px;"><p>Bairro</p>
+                <input type="text" name="Bairro" size=20></td>
+                <td style="position: relative;left:60px;"><p>Complemento</p>
+                <input type="text" name="Complemento"></td>
+                <td style="position: relative;left:80px;"><p>Cidade</p>
+                <input type="text" name="Cidade"></td>
+                <td style="position: relative;left:100px;"><p>Estado</p>
+                    <select>
+                        <option></option>
+                        <option>SP</option>
+                        <option>MG</option>
+                        <option>RJ</option>
+                        <option>AC</option>
+                        <option>AL</option>
+                        <option>AP</option>
+                        <option>AM</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MT</option>
+                        <option>MS</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PR</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>RN</option>
+                        <option>RS</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>SC</option>
+                        <option>SE</option>
+                        <option>TO</option>
+                    </select>
+            </tr></table><br>
+            <table><tr>
+                <td style="position: relative;left:40px;"><p>DDD+Telefone</p>
+                <input type="text" name="DDD"></td>
+                <td style="position: relative;left:80px;"><p>DDD+Celular</p>
+                <input type="text" name="Celular"></td>
+                <td style="position: relative;left:100px;"><p>Conte um pouco sobre você:</p>
+                <TEXTAREA NAME="texto" COLS=50 ROWS=3></TEXTAREA></td>
+            </tr></table><br>
+            <input class="btn-dark" type="submit">
+        </form><br>  
+        <script src="JS.js"></script>
+    </body>
+</html>
